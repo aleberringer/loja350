@@ -1,0 +1,46 @@
+<div id="Product">
+  <FormProd>
+    <span class=EstNomeProd><NomeProd></span>
+    <span class=EstRefProd><LegendaCat> <NomeCat><CodProd>
+    <Lancamento>
+    <script>if(<OpiniaoQtd>>0){document.write("<table><tr><td>Avaliação geral dos clientes:</td><td><OpiniaoMedia></td><td><span class=EstRefProd>(<OpiniaoQtd> avaliações)</span></td></tr></table>")}</script>
+    <script>if("<ImagemProdDet>"!=""){document.write("<img src='<ImagemProdDet>'>")} else {document.write("<img src='<ImagemProdPri>'>")};</script>
+    <script>MostraBotIndique(<IDProduto>);</script></td><td><script>MostraBotAval(<IDProduto>);</script>
+    <Adicional1>
+    <Adicional2>
+    <Adicional3>
+    <AdicionalD1>
+    <AdicionalD2>
+    <AdicionalD3>
+  </FormProd>
+</div>
+<!-- PROD PAI --> 
+<div id="ShowCEP<IDProduto>"></div>
+<script>ShowCEP(<IDProduto>);</script>
+
+<!-- PROD Filho --> 
+<div id="SubProducts">
+<Sub>
+  <div id="SubProduct<IDProduto>">
+    <FormProd>
+    <Adicional1>
+    <Adicional2>
+    <Adicional3>
+    <AdicionalD1>
+    <AdicionalD2>
+    <AdicionalD3>
+    <Descricao>
+    </FormProd>
+    <script>MostraPreco(<PrecoNum>,<PrecoOri>,'<CodProd>');</script> <script>MostraEconomia(<PrecoNum>,<PrecoOri>);</script>
+    <script>MostraParcelaPagSeguro(<PrecoNum>,<MaxParcelasProdNum>);</script>
+    <script>MostraDesconto(<PrecoNum>,<PrecoOri>);</script>
+    <LinkComprar><AvisoDisp>
+  </div>              
+</Sub>
+</div>
+<!-- PROD Filho --> 
+
+
+<DescrHTM>
+
+<span class=EstDescrProd><br><Descricao></span> 
