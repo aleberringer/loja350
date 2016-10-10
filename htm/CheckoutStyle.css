@@ -1,0 +1,129 @@
+
+/* Estilos do PEDIDO */
+.EstPedidoPrecoUnit{font-size:8pt;font-family:tahoma,verdana;}
+.EstPedidoQtd{font-size:8pt;font-family:tahoma,verdana;}
+#idTotalItensFC, #idTxtItemFC, #idTxtTotalPedidoFC{font-size:8pt;font-family:tahoma,verdana;}
+
+.EstTabPedidoTit {background:#efefef;color:#333333;font-size:9pt;font-family:tahoma,verdana,Arial,Helvetica,sans-serif;font-weight:bold;height:26px;}
+.EstTabPedido {font-size:9pt;background:#fcfcfc;}
+.EstTabPedidoNome {color:#23517F;font-size:8pt;font-weight:bold;font-family:Tahoma,verdana,Arial,Helvetica,sans-serif;text-decoration:none}
+.EstTabPedidoNome:visited {color:#23517F;}
+.EstTabPedidoNome:hover {color:#000000;}
+.EstTabPedidoNum {font-size:8pt;background:#fcfcfc;font-family:tahoma,verdana;}
+.EstTabPedidoTotal {height:30px;font-size:8pt;background:#efefef;font-weight:bold;font-weight:bold;font-family:verdana,Arial,Helvetica,sans-serif;}
+.EstTabPedidoFrete {height:30px;font-size:8pt;background:#efefef;font-weight:bold;font-weight:bold;font-family:verdana,Arial,Helvetica,sans-serif;}
+.EstTabPedidoBot {color:#000099;font-size:9pt;font-weight:bold;font-family:Arial,Helvetica,sans-serif;}
+.EstTabPedidoRef {color:black;font-size:8pt;font-family:Tahoma,verdana,Arial,Helvetica,sans-serif;}
+.EstTabPedidoAdicNome {font-size:8pt;font-family:Tahoma,verdana,Arial,Helvetica,sans-serif;}
+.EstTabPedidoAdicItem {font-size:8pt;font-family:Tahoma,verdana,Arial,Helvetica,sans-serif;font-weight:bold;}
+.EstTextoQtd {font-size:8pt;font-family:Arial,Helvetica,sans-serif;text-align:right;}
+
+
+/* Checkout */
+
+#idCheckoutFC .EstChkNomeCampo{text-align:right;vertical-align:text-top;font-weight:normal;font-family:'opensans-regular-webfont',tahoma,arial;font-size:11px;}
+#idCheckoutFC .EstChkValorCampo{font-family:'opensans-regular-webfont',tahoma,arial;font-size:11px}
+
+#idChkRegisterFC .EstChkNomeCampo{font-family:'opensans-regular-webfont',tahoma,arial;font-size:13px;padding-top:8px;}
+#idChkRegisterFC .InputText{font-family:'opensans-regular-webfont',tahoma,arial;font-size:12px}
+
+#idChkPaymentFC .EstNomePagto{font-family:'opensans-regular-webfont',tahoma,arial;font-size:13px}
+#idChkCCIntFC .EstChkNomeCampo{font-family:'opensans-regular-webfont',tahoma,arial;font-size:12px;padding-top:8px;}
+
+#CheckoutContent{width:100%;box-sizing: border-box;}
+
+#ChkLogin{float:center;}
+#ChkLogin #idIdentifyFC{width:500px;}
+#ChkLogin #idDivLinkContinueFC{width:100%;text-align:center;font-family:'opensans-regular-webfont',tahoma,arial;}
+#ChkLogin #idSpanLinkContinueFC{width:100%;float:center;}
+#ChkLogin #idSpanLinkContinueFC #idLinkContinueFC{width:100%;font-weight:normal;}
+
+#ChkLogin #idTabLoginFC{width:100%;}
+#ChkLogin #idChkEmailLoginFC{font-size:18px;white-space:nowrap;width:25%;padding-top:8px;}
+#ChkLogin #Email{font-size:18px;width:80%;height:24px;color:#555555;}
+
+#idTabOptSitFC{width:100%;}
+#idTabOptSitFC .EstChkRadioOptSit{width:30%;text-align:right}
+#idTabOptSitFC .EstChkOptSit{font-size:15px;}
+
+#idChkTopFC{display:block}
+
+#CheckoutCols{width:100%;display:table;}
+#idChkOrderConfirmationFloat{float:right}
+
+#idChkTopFC{display:block;}
+
+#idCheckoutFC #idChkCol1FC{float:left;width:30%;min-width:300px;box-sizing: border-box;}
+#idCheckoutFC #idChkCol2FC{float:left;width:30%;min-width:300px;box-sizing: border-box;}
+#idCheckoutFC #idChkCol3FC{float:left;width:40%;min-width:300px;box-sizing: border-box;}
+
+#idCheckoutFC{margin-top:20px;}
+
+#idChkAllFC{width:100%;}
+#idChkLoginIntFC{width:600px;background-color:#FFFFFF;box-sizing: border-box;min-width:300px}
+#idChkRegisterIntFC{width:99%;background-color:#FFFFFF;box-sizing: border-box;}
+#idChkCompletionIntFC{width:99%;background-color:#FFFFFF;box-sizing: border-box;}
+#idChkCartIntFC{width:99%;background-color:#FFFFFF;box-sizing: border-box;}
+#idChkFreightIntFC{width:99%;background-color:#FFFFFF;box-sizing: border-box;}
+#idChkPaymentIntFC{width:99%;background-color:#FFFFFF;box-sizing: border-box;}
+#idChkCCIntFC{width:99%;margin-top:10px;box-sizing: border-box;}
+
+/* MSG ERRORS */
+.EstChkTxtMsg{color:green;font-size:13px;font-family:tahoma,arial;}
+.EstChkMsg {background-color:#f1f1f1;padding:5px;}
+.EstErrField{margin:4px 0px 2px 0px;}
+.EstTxtErrField{color:red;background-color:#fff8da;padding:3px;font-size:11px;font-family:tahoma,arial;}
+#idChkFreightIntFC .EstErrField{margin:10px 0px 2px 0px;}
+#idChkFreightIntFC .EstTxtErrField{color:red;background-color:#fff8da;padding:3px;font-size:13px;font-family:tahoma,arial;font-weight:bold;}
+#idChkPaymentIntFC .EstErrField{margin:10px 0px 2px 0px;}
+#idChkPaymentIntFC .EstTxtErrField{color:red;background-color:#fff8da;padding:3px;font-size:13px;font-family:tahoma,arial;font-weight:bold;}
+#idChkCCIntFC .EstErrField{margin:4px 0px 2px 0px;}
+#idChkCCIntFC .EstTxtErrField{color:red;background-color:#fff8da;padding:3px;font-size:11px;font-family:tahoma,arial;font-weight:normal;}
+
+
+#idChkTopFC #idDivLinkContinueFC{width:250px;text-align:center;}
+#idDivLinkContinueFC{width:154px;height:39px;border-width:1px;border-style:solid;border-color:#6ea853;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+#idCheckoutFC #idTxtLinkContinueFC{background-color:#44ac55;padding:10px;cursor:pointer;border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;text-transform: uppercase; font-family:'opensans-regular-webfont',tahoma,arial;}
+#idChkOrderConfirmationFloat{width:250px;}
+#idChkConrimationFooterFC #idDivLinkContinueFC{width:250px;text-align:center;}
+
+#idCheckoutFC .BotChkPaymentContinue{
+     font-size:16px;
+     width:90%;
+     background-color: #44ac55;
+     border-radius: 3px;
+     -webkit-border-radius: 3px;
+     -moz-border-border-radius: 3px;
+     border: none;
+     color: #fff;
+     cursor:pointer;
+     text-transform: uppercase;
+}
+
+#idTxtPaymentOpenFC{text-align:center;}
+.EstChkTextoContinuar{color:#44ac55;font-size:14px;}
+
+@media (max-width: 1240px) {
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 800px) {
+}
+
+@media (max-width: 700px) {
+  #idChkLoginIntFC{width:300px;}
+  #ChkLogin #idIdentifyFC{width:100%;}
+  #ChkLogin #idChkEmailLoginFC{font-size:15px;white-space:nowrap;width:25%;padding-top:8px;}
+  #ChkLogin #Email{font-size:16px;height:22px;}
+  #idTabOptSitFC .EstChkRadioOptSit{width:20%;}
+  #idTabOptSitFC .EstChkOptSit{font-size:13px;}
+}
+
+@media (max-width: 550px) {
+}
+
+@media (max-width: 400px) {
+}
+
