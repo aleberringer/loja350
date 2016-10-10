@@ -1,0 +1,53 @@
+<script>
+
+var iQtdProdDist=<QtdProdutosDistintos>;
+
+var aDesc=new Array("<DescritorSimples2Produto1>","<DescritorSimples2Produto2>","<DescritorSimples2Produto3>","<DescritorSimples2Produto4>","<DescritorSimples2Produto5>","<DescritorSimples2Produto6>","<DescritorSimples2Produto7>","<DescritorSimples2Produto8>","<DescritorSimples2Produto9>","<DescritorSimples2Produto10>");
+var aQtds=new Array("<QtdProduto1>","<QtdProduto2>","<QtdProduto3>","<QtdProduto4>","<QtdProduto5>","<QtdProduto6>","<QtdProduto7>","<QtdProduto8>","<QtdProduto9>","<QtdProduto10>");
+var aIDPs=new Array("<IDProduto1>","<IDProduto2>","<IDProduto3>","<IDProduto4>","<IDProduto5>","<IDProduto6>","<IDProduto7>","<IDProduto8>","<IDProduto9>","<IDProduto10>");
+var aNoms=new Array("<NomeProduto1>","<NomeProduto2>","<NomeProduto3>","<NomeProduto4>","<NomeProduto5>","<NomeProduto6>","<NomeProduto7>","<NomeProduto8>","<NomeProduto9>","<NomeProduto10>");
+var aPris=new Array("<PrecoUnitProduto1>","<PrecoUnitProduto2>","<PrecoUnitProduto3>","<PrecoUnitProduto4>","<PrecoUnitProduto5>","<PrecoUnitProduto6>","<PrecoUnitProduto7>","<PrecoUnitProduto8>","<PrecoUnitProduto9>","<PrecoUnitProduto10>");
+
+var bAchou=false;
+
+for(var i=0;i<iQtdProdDist && !bAchou;i++){
+  if(aDesc[i]==="Durex"){bAchou=true;}
+}
+
+if(bAchou){
+  var zQty=aQtds[i];
+  var zPnr=aIDPs[i];
+  var zPna=aNoms[i];
+  var zPun=aPris[i];
+  var zCid="DUR";
+}
+else{
+  var zQty=aQtds[0];
+  var zPnr=aIDPs[0];
+  var zPna=aNoms[0];
+  var zPun=aPris[0];
+  var zCid="OUT";
+}
+</script>
+
+
+<xSCRIPT TYPE="text/javascript" src="http://ad.zanox.com/pps/?14718C815922959&mode=[[1]]&CID=[[basket]]&CustomerID=[[XXX]]&OrderID=[[XXX]]&CurrencySymbol=[[BRL]]&ReviewNote=[[XXX]]&TotalPrice=[[0]]&PartnerID=[[xxx]]&XML=
+
+[[
+
+%3Cz%3E%3Co%3E%3Cso%20qty%3D%22
+XXX
+%22%20pnr%3D%22
+XXX
+%22%20pn%3D%22
+XXX
+%22%20up%3D%22
+XXX
+%22%20cid%3D%22
+XXX
+
+%22%20%2F%3E%3C%2Fo%3E%3C%2Fz%3E
+
+]]
+
+"></xCRIPT>
