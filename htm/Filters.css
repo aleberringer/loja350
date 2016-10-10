@@ -1,0 +1,131 @@
+
+#idHeadFilters{
+  font-size:0.9em;
+  margin:10px 0 10px 0;
+  padding:10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:#cdcdcd;
+  box-sizing: border-box;
+  float:left;
+  width:100%;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-border-radius: 5px;
+}
+#idTxtFilters{float:left;}
+#idShowFilters{float:left;margin:0 0 0 5px}
+#idHideFilters{float:left;margin:0 0 0 5px}
+
+#idShowFilters button{
+  background-color:#5C9E0D;
+  border:0px solid #5C9E0D;
+  padding:4px 10px 4px 10px;
+  font-size:11px;
+  color:#fcfcfc;
+  font-weight:bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor:pointer;
+}
+#idShowFilters button:hover{background:#555555}
+
+#idHideFilters button{
+  background-color:#555555;
+  border:0px solid #555555;
+  padding:4px 10px 4px 10px;
+  font-size:11px;
+  color:#fcfcfc;
+  font-weight:bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor:pointer;
+}
+#idHideFilters button:hover{background:#990000}
+
+#idFiltersFC{
+  font-size:0.9em;
+  margin:10px 0 10px 0;
+  border-style:solid;
+  border-width:1px;
+  border-color:#cdcdcd;
+  box-sizing: border-box;
+  float:left;
+  width:100%;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-border-radius: 5px;
+  width:100%;display:table;box-sizing: border-box;
+}
+
+#idFiltersFC ul li{padding:3px;font-size:0.8em;}
+#idFiltersFC ul li select{
+  color: #555555;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #cacaca;
+  background-image: none;
+}
+.EstTitQts{
+  font-weight:bold;
+}
+
+#idDivPath{width:100%;display:block;box-sizing: border-box;}
+#idHeadFilters{width:100%;display:block;box-sizing: border-box;}
+
+#idListaProdCategoriasFC{width:34%;float:left;padding:10px;box-sizing: border-box;min-width:250px;}
+#idListaProdAdicional1FC{width:22%;float:left;padding:10px;box-sizing: border-box;min-width:250px;}
+#idListaProdAdicional2FC{width:22%;float:left;padding:10px;box-sizing: border-box;min-width:250px;}
+#idListaProdAdicional3FC{width:22%;float:left;padding:10px;box-sizing: border-box;min-width:250px;}
+
+#idUlPathSearchFC .del {margin-left:3px;}
+#idUlPathSearchFC .del a{cursor:pointer;background:url(../images/x.gif) no-repeat bottom right;padding:0;margin:0 3px 0 3px;}
+#idUlPathSearchFC .del a:hover{cursor:pointer;background:url(../images/xon.gif) no-repeat bottom right}
+#idUlPathSearchFC .del img{width:11px;border:0;}
+
+#idUlPathSearchFC .pad {background:url(/images/PathCat.gif) no-repeat center;padding:0;margin:1px 6px 1px 8px;}
+#idUlPathSearchFC .pad img{width:3px;height:5px;}
+
+
+
+#idDivSearch{
+  font-size:0.9em;
+  margin:10px 0 10px 0;
+  padding:10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:#cdcdcd;
+  box-sizing: border-box;
+  float:left;
+  width:100%;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-border-radius: 5px;
+}
+#idTxtFiltersBy{float:left;margin-right:10px;}
+#idTxtRemoveFilters{float:left;margin-left:10px;}
+
+#idTxtRemoveFilters a{
+  background-color:#1a75d7;
+  border:0px solid #1a75d7;
+  padding:4px 10px 4px 10px;
+  font-size:11px;
+  color:#fcfcfc;
+  font-weight:bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+ }
+
+#idTxtRemoveFilters a:hover{
+  background-color:#990000;
+ }
+
+#idTDLinkAdvancedSearchFC{float:right;margin:2px 0 0 5px}
+#idTablePathSearchFC{display:block;float:left;width:100%;margin:10px 0 0 15px}
+
