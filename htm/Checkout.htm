@@ -1,0 +1,73 @@
+<!-- Responsive Checkout -->
+
+<!-- Início Checkout -->
+<div id="CheckoutContent">
+
+  <!-- Login -->
+  <div id="ChkLogin">
+    <Login>
+  </div>
+
+  <!-- Botão de confirmação -->
+  <div id="idChkTopFC">
+    <div id="idChkOrderConfirmationFloat"><OrderConfirmation></div>
+  </div>
+  
+  <!-- Colunas -->
+  <div id="CheckoutCols">
+  
+    <!-- Cadastro -->  
+    <div id="idChkCol1FC">
+      <Register>
+    </div>
+  
+    <div id="idChkCol2FC">
+      <span id="idChkIniCol2FC"></span>
+      <div id="idChkTagsCol2FC">
+        <!-- Pedido confirmado -->  
+        <OrderCompletion>
+        <!-- Frete -->  
+        <Freight>
+        <!-- Pagamento -->  
+        <Payment>
+      </div>
+    </div>
+
+     <!-- Cesta -->  
+    <div id="idChkCol3FC">
+      <Cart>
+    </div>
+ 
+  </div>
+
+  <!-- Botão de confirmação -->
+  <div id="idChkConrimationFooterFC">
+    <div id="idChkOrderConfirmation"><OrderConfirmation></div>
+  </div>
+
+  <!-- Rodape -->  
+  <div id="idChkBottomFC"></div>
+
+</div>
+<!-- Fim Checkout -->
+
+
+<script>
+//anula o float
+
+function FuncChkRegisterEnd(){
+  if(F$.Step==2){
+    F$.fnChkAllFloat==undefined;
+  }
+}
+
+
+
+//    function FuncChkFloat(){};
+//    alert('a');
+
+</script>
+
+
+
+
