@@ -1,0 +1,129 @@
+// FastCommerce - EstiloProduto.htm (Modelo Padrão FastCommerce)
+<ProdTop>
+
+<div style="display:none">
+  <div id="idListaProdCategoriasFC"><ListPathCatQt></div>
+  <div id="idListaProdAdicional1FC"><ListAdic1Qt></div>
+  <div id="idListaProdAdicional2FC"><ListAdic2Qt></div>
+  <div id="idListaProdAdicional3FC"><ListAdic3Qt></div>
+</div>
+<div id="idDivPathSearchFC" style="display:none"><ListPathSearch></div>
+<div id="idDivLinkAdvancedSearchFC" style="display:none"><LinkAdvancedSearch></div>
+
+<script>
+ImgLoadingFC=FC$.PathImg+"loading.gif";
+var iQtdProds=<QtProd>;
+
+if(iQtdProds>1){
+  var sfiltros="";
+  var oUlPathSearch=document.getElementById("idUlPathSearchFC");
+  if(oUlPathSearch){sfiltros+="<div id=idFilteringBy>Filtrando por:</div><div style=width:180px>"+document.getElementById('idDivPathSearchFC').innerHTML+"</div>";}
+  var LinkAdvancedSearch=document.getElementById("idLinkAdvancedSearchFC");
+  if(LinkAdvancedSearch && oUlPathSearch){sfiltros+="<span style='font-size:8pt;a text-decoration:none;'>"+document.getElementById('idDivLinkAdvancedSearchFC').innerHTML+"</span>";}
+  sfiltros+="<div id=idFilterBy>Filtrar por:</div>";
+  var oUlPathCatQt=document.getElementById("idUlPathCatQtFC");
+  if(oUlPathCatQt){sfiltros+="<div id=idCatFilter>Departamentos:</div>"+ document.getElementById('idListaProdCategoriasFC').innerHTML}
+  var oUlAdic1Qt=document.getElementById("idUlAdic1QtFC");
+  if(oUlAdic1Qt){sfiltros+="<div id=idAd1Filter><NomeAdicional1>:</div>"+ document.getElementById('idListaProdAdicional1FC').innerHTML}
+  var oUlAdic2Qt=document.getElementById("idUlAdic2QtFC");
+  if(oUlAdic2Qt){sfiltros+="<div id=idAd2Filter><NomeAdicional2>:</div>"+ document.getElementById('idListaProdAdicional2FC').innerHTML}
+  var oUlAdic3Qt=document.getElementById("idUlAdic3QtFC");
+  if(oUlAdic3Qt){sfiltros+="<div id=idAd3Filter><NomeAdicional3>:</div>"+ document.getElementById('idListaProdAdicional3FC').innerHTML}
+  if(oUlPathCatQt || oUlAdic1Qt || oUlAdic2Qt || oUlAdic3Qt){  
+    oLeftBar=sF$.fnGetID("LeftBar");
+    if(oLeftBar && document.body.offsetWidth>780){
+      oLeftBar.style.width="20%";
+      oContent=sF$.fnGetID("Content");
+      if(oContent)oContent.style.width="80%";
+      sfiltros="<div>"+ sfiltros +"</div>";
+      oLeftBar.innerHTML=sfiltros;
+    }
+  }
+}
+
+if(iQtdProds=="1"){
+  var sPages=sF$.fnGetID("idPageCountFC");
+  if(sPages)sPages.style.display="none";
+}
+
+OffsetAutoPagFC=290;
+</script>
+
+<div id="idPagProdTop"><br /></div>
+
+<div id="idProdPageFC">
+</ProdTop>
+
+
+
+<ProdLista>
+  <div class="productList">
+      <div class="DivListProd">  
+        <div class="DivListImagemProd"><ImagemProd></div>
+        <div class="DivListNomeProd"><a href="/prod,idloja,<IDLojaNum>,idproduto,<IDProduto>,<NomeProdUA>"><span class="ListNomeProd"><NomeProd></span></a></div>
+        <div class="DivListPriceProd"><div id="idProdPrice<IDProduto>"></div></div>
+        <script>sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script>        
+      </div>
+  </div>
+</ProdLista>
+
+
+
+
+
+
+<ProdDet>
+
+<div id="ProductDetailHead">
+  <div id="idBreadcrumb">
+    <ul>
+      <li><PathCat></li>
+    </ul>
+  </div>
+</div>
+
+<FormProd>
+<div id="ProductDetails<IDProduto>" class="ProductDetails">
+  <div id="ProductDetailCol1">
+    <div id="ImagemProd">
+      <ImagemProd>
+    </div>
+  </div>
+  <div id="ProductDetailCol2">
+    <h1><NomeProd></h1>
+    <div id="DescrProd"><Descricao></div>
+  </div>
+  <div id="ProductDetailCol3">
+    <div id="DivPrice">
+      <div id="Price"> 
+        <div id="PosPrice"><div id="idProdPrice<IDProduto>"></div></div>
+        <script>sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script>        
+          <div id="Buy">
+            <button type="button" onclick="Compra<IDProduto>(this);">Comprar</button>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div style="width:100%;float:left;margin-top:30px;border-top-style:solid;border-top-width:1px;border-top-color:#cdcdcd;">
+    <CrossSelling>
+  </div>
+
+</div>
+</FormProd>
+
+
+<script>
+sF$.fnCustomizeIconsSocialNetworks();
+</script>
+</ProdDet>
+
+
+<ProdAmp>
+  <Sub>
+  </Sub>
+</ProdAmp>
+
+<ProdBottom>
+</div>
+</ProdBottom>
