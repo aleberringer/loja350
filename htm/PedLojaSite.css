@@ -1,0 +1,32 @@
+/* Estilos personalizados */
+
+body{background:#f7f7f7;}
+
+#idFCHeader{text-align:center;margin-top:20px;}
+#idFCMain{width:1800px;margin:auto;border-style:solid;border-width:3px;border-color:#dedede;margin-top:10px;border-radius:20px;-moz-border-radius:20px;-webkit-border-radius:20px;background:#ffffff;}
+#idFCLeftContentRight{width:1700px;margin:auto;}
+#idFCContent{border-style:solid;border-width:1px;border-color:#dedede;margin:10px 50px 10px 50px;width:1700px;border-radius:20px;-moz-border-radius:20px;-webkit-border-radius:20px;background:#fcfcfc;}
+#ULMenuRodape {list-style-type:none;margin:0;padding:0;margin-top:20px;}
+#ULMenuRodape li {display:inline;}
+
+.LinkRodape{color:#777777;text-decoration:none;}
+.LinkRodape a{color:#777777;text-decoration:none;}
+.LinkRodape a:visited{color:#777777;text-decoration:none;}
+.LinkRodape a:hover{color:#000000;text-decoration:underline;}
+
+
+
+
+@media screen and (max-width: 1890px) {
+  #idFCLeftContentRight{width:1300px;margin:auto;}
+  #idFCMain{width:1300px}
+  #idFCContent{width:1200px;}
+}
+
+@media screen and (max-width : 1300px) {
+  #idFCLeftContentRight{width:1070px;margin:auto;}
+  #idFCMain{width:1070px}
+  #idFCContent{width:970px;}
+}
+
+
