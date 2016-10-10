@@ -1,0 +1,194 @@
+// FastCommerce - EstiloProduto.htm (Modelo Padrão FastCommerce)
+<ProdTop>
+
+<link href="<BaseLoja>htm/Filters.css" rel="stylesheet">
+
+<div id="idDivPath">
+  <div id="idHeadFilters">
+    <div id="idTxtFilters">Filtros da busca:</div>
+    <div id="idShowFilters"><button onclick="ToggleIDs('idHideFilters','idShowFilters');document.getElementById('idFiltersFC').style.display='';">Exibir</button></div>
+    <div id="idHideFilters" style="display:none;"><button onclick="ToggleIDs('idShowFilters','idHideFilters');document.getElementById('idFiltersFC').style.display='none';">Ocultar</button></div>
+  </div>
+  <div id="idFiltersFC" style="display:none;">
+    <div id="idListaProdCategoriasFC">
+      <div class="EstTitQts"><LegendaCats></div>
+      <ListPathCatQt>
+    </div>
+    <div id="idListaProdAdicional1FC">
+      <div class="EstTitQts"><NomeAdicional1></div>
+      <ListAdic1Qt>
+    </div>
+    <div id="idListaProdAdicional2FC">
+      <div class="EstTitQts"><NomeAdicional2></div>
+      <ListAdic2Qt>
+    </div>
+    <div id="idListaProdAdicional3FC">
+      <div class="EstTitQts"><NomeAdicional3></div>
+      <ListAdic3Qt>
+    </div>
+  </div>
+</div>
+
+<div id="idDivSearch">
+  <div id="idTxtFiltersBy">Filtrando por:</div>
+  <div id="idTxtRemoveFilters"><a href="/prod,idloja,<IDLojaNum>">Remover filtros</a></div>
+  <div id="idTDLinkAdvancedSearchFC"><LinkAdvancedSearch></div>
+  <div id="idTablePathSearchFC"><ListPathSearch></div>
+</div>
+
+
+<script>
+sF$.fnAdjustsFilters();
+
+iQtdProds=<QtProd>;
+
+if(iQtdProds=="1"){
+  var sPages=sF$.fnGetID("idPageCountFC");
+  if(sPages)sPages.style.display="none";
+}
+
+OffsetAutoPagFC=290;
+</script>
+
+<div id="idPagProdTop">&nbsp;</div>
+
+</ProdTop>
+
+
+<!-- ################################ LISTA DOS PRODUTOS ################################ -->
+<ProdLista>
+  <div class="productList">
+      <div class="DivListProd">  
+        <div class="DivListImagemProd"><ImagemProd></div>
+        <div class="DivIntListProd"> 
+          <div class="DivListNomeProd"><a href="/prod,idloja,<IDLojaNum>,idproduto,<IDProduto>,<NomeProdUA>"><span class="ListNomeProd"><NomeProd></span></a></div>
+          <div class="DivListPriceProd"><div class="ProdPriceList" id="idProdPrice<IDProduto>"></div></div>
+          <script>sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script>        
+          <div class="DivListSpy"><a class="fancybox fancybox.iframe" href="/listaprodutos.asp?idloja=<IDLoja>&sty=9&int=1&idproduto=<IDProduto>">Espiar</a></div>
+          <div class="DivListDetails"><a href="/prod,idloja,<IDLojaNum>,idproduto,<IDProduto>,<NomeProdUA>">Detalhes</a></div>
+        </div> 
+      </div>
+  </div>
+</ProdLista>
+
+<!-- ################################ LISTA DOS PRODUTOS ################################ -->
+
+
+
+
+
+<!-- ################################ DETALHE DO PRODUTO ################################ -->
+
+<ProdDet>
+<script src="/magiczoom.js"></script>
+
+<div id="ProductDetailHead">
+  <div id="idBreadcrumb">
+    <ul>
+      <li><a href="categorias.asp?idloja=<IDLoja>">Departamento</a></li>
+      <li><PathCat></li>
+    </ul>
+  </div>
+  <div id="idShareProd">
+    <ul>
+      <li><a href="javascript:sF$.fnShowSharing(<IDProduto>)"><img src="<baseloja>images/IconProdEmail.svg" width="25" height="25" border="0" alt="E-mail" title="Recomende este produto por e-mail"></a></li>
+      <li><ShareGooglePlus></li>
+      <li><ShareFacebook></li>
+      <li><ShareTwitter></li>
+      <li><SharePinterest></li>
+      <li><a href="whatsapp://send?text=Veja o produto: <NomeProd> / Link: https://modeloab.lojavirtualfct.com.br/p<IDProduto>"><img src="<baseloja>images/IcWhatsApp.svg" width="35" height="35" border="0" alt="Recomende este produto pelo WhatsApp" title="Recomende este produto pelo WhatsApp"></a></li>
+    </ul>
+  </div>
+</div>
+<div id="ProductDetails<IDProduto>" class="ProductDetails">
+  <div id="ProductDetailCol1">
+    <div id="ImagemProd">
+      <a href="<ImagemProdAmp>" title="<NomeProd>" class="MagicZoom" rel='zoom-width:580px;zoom-height:380px;' ><img src="<ImagemProdDet>"  /></a>
+    </div>
+  </div>
+  <div id="ProductDetailCol2">
+    <h1><NomeProd></h1>
+    <div id="DescrProd"><Descricao></div>
+    <FormProd>
+    <p><Cor></p>  
+    <p><Adicional1></p>
+    <p><Adicional2></p>
+    <p><Adicional3></p>
+    <p><AdicionalD1></p>
+    <p><AdicionalD2></p>
+    <p><AdicionalD3></p>
+    </FormProd>
+  </div>
+  <div id="ProductDetailCol3">
+    <div id="DivPrice">
+      <div id="Price"> 
+        <div id="PosPrice"><div class="ProdPrice" id="idProdPrice<IDProduto>"></div></div>
+        <script>sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script>        
+        <div id="Buy">
+          <span id="idButtonProd<IDProduto>"></span>
+          <script>sF$.fnShowButtonCart(<IDProduto>,<Estoque>,<PrecoOri>);</script>
+        </div>
+      </div>
+    </div>
+    <div style="width:100%;margin:10px;display:block;text-align:center;"><BarCode></div>
+    <div id="ShowCEP<IDProduto>"></div>
+  </div>
+  <div id="VideoProd<IDProduto>" class="DivVideoProd"></div> 
+
+  <Sub>
+|||<Descricao>|||<br><br>
+|||<DescricaoCurta>|||<br><br>
+|||<DescricaoLonga>|||<br>
+
+    <div class="SubProduct">
+      <FormProd>
+      <div style="float:left">
+        <CodProd>
+        <p><Cor></p>
+        <p><Adicional1></p>
+        <p><Adicional2></p>
+        <p><Adicional3></p>
+        <p><AdicionalD1></p>
+        <p><AdicionalD2></p>
+        <p><AdicionalD3></p>
+        </FormProd>
+      </div>
+      <div style="float:left;">
+        <div id="DivPrice">
+          <div id="Price"> 
+            <div id="PosPrice"><div class="ProdPrice" id="idProdPrice<IDProduto>"></div></div>
+            <script>sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script>        
+            <div id="Buy">
+              <button type="button" onclick="Compra<IDProduto>(this);">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </Sub>
+
+  <div class="DivDescrProdHTM"><DescrHTM></div>
+  <div class="DivComments"><Comments></div>
+  <div class="DivCrossSelling"><CrossSelling></div>
+</div>
+<script>
+var sCodVideo="<CodVideoProd>";
+if(sCodVideo!="")sF$.fnInsertVideo(<IDProduto>,sCodVideo);
+sF$.fnCustomizeIconsSocialNetworks(true);
+
+fnShowCEP(<IDProduto>);
+</script>
+</ProdDet>
+
+<!-- ################################ DETALHE DO PRODUTO ################################ -->
+
+
+
+
+<ProdAmp>
+  <Sub>
+  </Sub>
+</ProdAmp>
+
+<ProdBottom>
+</ProdBottom>
