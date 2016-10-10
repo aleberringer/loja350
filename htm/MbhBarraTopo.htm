@@ -1,0 +1,52 @@
+
+<script src="<BaseLoja>htm/JurosParcelas.js"></script>
+<script src="<BaseLoja>htm/MbhLojaLib.js"></script>
+<script src="/jquery-ui-1.9.2.custom.min.js"></script>
+<link href="<BaseLoja>htm/jquery_ui.css" rel="stylesheet" type="text/css">
+
+<div id="Main">
+
+<!-- ### BarraTopo.htm Início ### -->
+
+  <div id="idTopStoreLogoFC">
+    <a href="home.asp?idloja=<IDLojaNum>"><img src="<BaseLoja>images/LogoTopo.png" id="StoreLogo" width="224" height="31" alt="<NomeLoja>" title="<NomeLoja>"></a>
+  </div>
+
+  <div id="idTopSearchFC">
+    <div>
+      <form name="TopSearchForm" method="GET" action="/listaprodutos.asp" onsubmit="return sF$.fnSearchSubmit(this)" >
+        <input type="hidden" name="idloja" value="<IDLojaNum>">
+        <input type="hidden" name="digitada" value="true">
+        <div id="DivSearch"> 
+          <div id="SearchText"><input type="text" value="<SearchText>" name="Texto" class="InputTextBusca" placeholder="Digite a sua busca aqui"></div>
+          <div id="DivSearchButton"><button class="SearchButton">Buscar</button></div>
+        </div>  
+      </form>
+    </div>  
+  </div>
+
+  <div id="idTopCartFC">
+    <div id="TopCart">
+      <table onclick="GoCart()" id=CestaTop class=Estilo_Div_Cesta>
+        <tr>
+          <td width=20><img src="<BaseLoja>images/CarrinhoTop.svg" hspace=8 vspace=2 width=20 height=20 border=0></td>
+          <td><span class=Estilo_Link_Cesta>Carrinho: (<span class=Estilo_Itens_Cesta id=x1></span>) &nbsp; &nbsp; &nbsp; Total: <span class=Estilo_Total_Cesta id=x2></span></span></td>
+        </tr>
+      </table>
+      <script>AtualizaCarrinho();</script>
+    </div> 
+  </div>
+
+
+  <script>if(iItensCesta>0)document.getElementById('CestaTop').style.backgroundColor="#fcfcfc";</script>
+
+  <div id="Menu" style="width:100%">
+    <ul>
+      <li><a href="/home.asp?idloja=<IDLojaNum>">Home</a></li>
+      <li><a href="/categorias.asp?idloja=<IDLojaNum>">Categorias</a></li>
+    </ul>
+  </div>
+
+<!-- ### BarraTopo.htm Fim ### -->
+
+  <div id="Content">
