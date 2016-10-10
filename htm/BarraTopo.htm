@@ -1,0 +1,77 @@
+<!-- ### BarraTopo Início ### -->
+<script src="<BaseLoja>htm/JurosParcelas.js"></script>
+<script src="<BaseLoja>htm/LojaLib.js"></script>
+<script src="<BaseLoja>htm/AutoSuggest.js"></script>
+<script src="/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="<BaseLoja>htm/fancybox/fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" href="<BaseLoja>htm/fancybox/fancybox.css?v=2.1.5" media="screen" />
+<link href="<BaseLoja>htm/jquery_ui.css" rel="stylesheet">
+<script>
+iItensCesta=<QtdCesta>;
+</script>
+<div id="Top">
+  <div id="idTopStoreLogoFC">
+    <a href="<StoreDomain>"><img64 src="<BaseLoja>images/LogoTopo.png" id="StoreLogo" width="180" height="67" alt="<NomeLoja>" title="<NomeLoja>"></a>
+  </div>
+  <div id="idTopMiddleFC">
+    <div>
+      <div id="MenuSup">
+        <ul>
+          <li><a href="/cadastro.asp?idloja=<IDLojaNum>">Meu cadastro</a></li>
+          <li><a href="/track.asp?idloja=<IDLojaNum>">Meus pedidos</a></li>
+          <li><a href="/page,idloja,<IDLojaNum>,arq,quemsomos.htm">Quem somos</a></li>
+          <li><a href="/faleconosco.asp?idloja=<IDLojaNum>">Contato</a></li>
+        </ul>
+      </div>
+      <form name="TopSearchForm" method="GET" id="autocomplete-form" action="/listaprodutos.asp" onsubmit="return sF$.fnSearchSubmit(this)" >
+        <input type="hidden" name="idloja" value="<IDLojaNum>">
+        <input type="hidden" name="digitada" value="true">
+        <div id="DivSearch">
+          <div id="SearchText"><input type="text" id="autocomplete" value="<SearchText>" name="Texto" class="InputTextBusca" placeholder="Digite a sua busca aqui"></div>
+          <div id="DivSearchButton"><button class="SearchButton">Buscar</button></div>
+        </div>
+      </form>
+    </div>
+
+<div class="GlobalLoginInfo">
+  <img src="<PathTo file="images/IconUser.svg">" id="UserImage" width="20" height="20" alt="Login usuário">
+  <div class="loginInfo" id="idLoginInfoFC">
+    <script>fnLoginUserName("<NomeCliente>","<FotoCliente>");</script>
+  </div>
+  <span id="idImgGlobalSignFC"></span>
+</div>
+    
+  </div>
+  <div id="idTopRightFC">
+    <div id="TopCart" class="TopCartContent">
+      <table onmouseover="sF$.fnShowCart(true)" onmouseout="sF$.fnShowCart(false)" onclick="sF$.fnGoCart()" id="idCestaTop">
+        <tr>
+          <td width="60" align="center">
+            <img64 src="<Baseloja>images/IconShopCart.svg" plain="true" width="35" height="35" vspace="2" id="CartFill" class="InlineSVG">
+          </td>
+          <td>
+            <div id="idCartTxtItemsTop">Carrinho: (<span id="idCartItemsTop"></span>)</div>
+            <div id="idCartTxtTotalTop">Total: <span id="idCartTotalTop"></span></div>
+          </td>
+        </tr>
+      </table>
+      <div id="DivItensCart" style="display:none;"><table onmouseover="sF$.ShowCart(true)" onmouseout="sF$.ShowCart(false)" id="TabItensCart" class="EstTabItensCart"></table></div>
+      <script>sF$.fnUpdateCart(false,false);</script>
+    </div>
+    <div id="CompactMenu"><a href="#na" onclick="fnShowMenu();"><span></span></a></div>
+  </div>
+</div>
+<div id="TopMenu">
+  <div id="Menu">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/categorias.asp?idloja=<IDLojaNum>">Departamentos</a></li>
+      <li><a href="/prod,idloja,<IDLojaNum>,promocao,1,ofertas.htm">Promoções</a></li>
+      <li><a href="/prod,idloja,<IDLojaNum>,lancamento,1,ofertas.htm">Lançamentos</a></li>
+      <li><a href="/news,idloja,<IDLojaNum>">Notícias</a></li>
+      <li><a href="/ajuda.asp?idloja=<IDLojaNum>">Ajuda</a></li>
+    </ul>
+  </div>
+</div>
+<div id="BannerTop"></div>
+<!-- ### BarraTopo Fim ### -->
