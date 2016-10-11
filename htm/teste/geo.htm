@@ -1,0 +1,32 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<head>
+<script src="http://mmm6.fastcommerce.com.br/LojaSite.js"></script></head>
+
+<body>
+<script>
+
+
+function fnGetDistances(){
+  AjaxExecFC("http://maps.googleapis.com/maps/api/distancematrix/xml","origins=014516-001&destinations=04757-020|64019-020|13208-080|91180-440|13201-001|21760-160|40484-060|35400-000|03575-060|07179-360|14890-012|20511-170|15700-096|75890-000|97543-100|13401-553|45730-000|22776-070|13209-355|22710-055|30640-180|11760-000|08503-000|13081-720|13087-500|38401-168|05641-030|05181-030|77006-488|09910-170|13567-140|09784-490&mode=driving&language=EN-us&sensor=false",false,processDistances);
+}
+
+function processDistances(obj){
+  var iErr=ReadXMLNode(obj,"status");if(iErr==null)return;
+  if(iErr!="OK"){
+    alert("Erro");
+    return;
+  }
+
+  var iOpt=ReadXMLNode(obj,"row");
+  for(var i=1;i<=iOpt;i++){
+    document.write(i+"<br>");
+  }
+
+}
+
+fnGetDistances();
+
+</script>
+</body>
+</html>
